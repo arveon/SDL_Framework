@@ -24,6 +24,8 @@ namespace sdlframework
 		static Mix_Chunk* load_sound(std::string path);
 		static Mix_Music* load_music(std::string path);
 
+		static SDL_Renderer* get_renderer() { return renderer; }
+
 		sdl_manager();
 		~sdl_manager();
 	};

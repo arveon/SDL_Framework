@@ -3,6 +3,8 @@
 #include <SDL_image.h>
 #include <SDL_mixer.h>
 
+#include <iostream>
+
 namespace sdlframework
 {
 	class game
@@ -12,8 +14,8 @@ namespace sdlframework
 	public:
 		void init();
 		void input();
-		bool update();
-		void draw();
+		bool update(Uint32 deltaTime);
+		void draw(SDL_Renderer* renderer);
 
 		game();
 		~game();

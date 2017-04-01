@@ -3,6 +3,9 @@
 #include "Time.h"
 #include "sdl_manager.h"
 
+#include <SDL.h>
+#include <iostream>
+
 namespace sdlframework
 {
 	class system

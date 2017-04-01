@@ -13,7 +13,7 @@ namespace sdlframework
 		void init();
 		void update();
 
-		float get_elapsed_time() { return elapsed_time; }
+		float get_delta_time() { return elapsed_time; }
 		float get_run_time() { return run_time; }
 	};
 }
