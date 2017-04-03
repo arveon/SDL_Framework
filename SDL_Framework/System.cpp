@@ -14,6 +14,7 @@ void system::game_loop()
 	{
 		time.update();
 		gameGoing = game.update(time.get_delta_time());
+
 		game.draw(sdl_manager::get_renderer());
 		game.input();
 
